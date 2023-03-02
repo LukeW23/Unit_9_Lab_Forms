@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Request a Brochure</title>
+<meta charset="utf-8">
+<style>
+
+form { background-color: #0f90f0;
+	   font-family: Arial, sans-serif;
+        width: 350px; padding: 10px;}
+label { float: left; clear: left;
+	    display: block; width: 100px; 
+	    text-align: right; 
+	    padding-right: 10px;
+	    margin-top: 10px; }
+input, textarea { margin-top: 10px; 
+                  display: block;}
+input[type="submit"] { margin-left: 110px; }
+
+@supports (display: grid) {
+  form {  display: grid;
+		grid-template-rows: auto;
+		grid-template-columns: 6em 1fr;
+		grid-gap: 1em; gap: 1em;
+		background-color: #0f90f0;
+	    font-family: Arial, sans-serif;
+        min-width: 20em; width: 60%; 
+		padding: 1.5em;
+}
+  input[type="submit"] { grid-column: 2 / 3;
+                       width: 10em; margin-left: 0;} 
+}
+
+</style>
+</head>
+<body>
+<h1>Request a Brochure</h1>
+<form method="sele" action="">
+  <label for="myAdd1">Address Line 1:</label>
+  <input type="text" name="myAdd1" id="myAdd1">
+  <label for="myAdd2">Address Line 2:</label>
+  <input type="text" name="myAdd2" id="myAdd2">
+  <label for="city">City:</label>
+  <input type="text" name="city" id="city">
+  <label for="state">State:</label>
+  <input type="text" name="state" id="state">
+  <label for="zip">Zip:</label>
+  <input type="text" name="zip" id="zip">
+  <input type="submit" value="Submit">
+</form>
+</body>
+</html>
